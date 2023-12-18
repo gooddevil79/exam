@@ -1,0 +1,27 @@
+.footer {
+  background-color: #3b3b3b;
+  color: #fff;
+  font-size: 1.6rem;
+
+  .footer-copyright {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    li {
+      border-left: 2px solid #7b7b7b;
+      &:last-child {
+        border: unset;
+      }
+      a {
+        padding: 0 0.5rem;
+        color: #fff;
+      }
+    }
+    border-bottom: 1px solid #eee;
+  }
+}

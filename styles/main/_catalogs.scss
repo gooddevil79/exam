@@ -1,0 +1,23 @@
+.catalog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  .catalog-item {
+    display: grid;
+    grid-template-columns: 33rem;
+    justify-content: center;
+    h3 {
+      font-size: 1.8rem;
+      color: #f68220;
+      margin: 1rem 0;
+    }
+    .para {
+      text-align: justify;
+    }
+    .catalogs-item-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-color: #666;
+    }
+  }
+}

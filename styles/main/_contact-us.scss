@@ -1,0 +1,24 @@
+.footer-contact {
+  padding: 1rem 0;
+  .para {
+    text-align: center;
+  }
+  .contact-us-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    li {
+      width: 15.8rem;
+      border: 2px solid;
+      a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

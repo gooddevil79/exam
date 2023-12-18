@@ -1,0 +1,58 @@
+@import 'fonts/fonts';
+@import 'header/header';
+@import 'main/articles';
+@import 'main/video';
+@import 'main/products';
+@import 'main/start-now';
+@import 'main/contact-us';
+@import 'footer/footer';
+@import './rwd';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  font-size: 10px;
+  direction: rtl;
+}
+body {
+  font-family: IRANSans;
+}
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.6rem; //only in mobile
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.sub-title {
+  font-size: 1.8rem;
+}
+.section {
+  padding: 4rem 0;
+}
+.para {
+  font-size: 1.6rem;
+}
+.main {
+  background-color: #f7f7f7;
+}
+.highlight {
+  color: #f68220;
+}
+.highlight a {
+  color: #f68220;
+}
