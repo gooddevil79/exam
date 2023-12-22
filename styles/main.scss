@@ -4,6 +4,7 @@
 @import 'main/video';
 @import 'main/products';
 @import 'main/start-now';
+@import 'main/catalogs';
 @import 'main/contact-us';
 @import 'footer/footer';
 @import './rwd';
@@ -33,10 +34,13 @@ body {
   padding: 0 1.6rem; //only in mobile
 }
 
+.container-fluid {
+  max-width: 100%;
+  padding: 0 1.6rem !important;
+}
 .title {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 3.2rem;
 }
 .sub-title {
   font-size: 1.8rem;

@@ -3,12 +3,22 @@
     max-width: 54rem !important;
   }
   .products-container {
-    .actions {
-      display: none;
+    .product-item {
+      .actions {
+        visibility: hidden;
+        opacity: 0;
+      }
+      &:hover .actions {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
   .contact-us-buttons {
     flex-direction: row !important;
+  }
+  .footer-copyright {
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16,6 +26,9 @@
 @media screen and (min-width: 992px) {
   .container {
     max-width: 72rem !important;
+  }
+  .product-item {
+    flex-basis: calc(100% / 2) !important;
   }
   .desktop-menu {
     display: flex !important;
@@ -25,6 +38,9 @@
   }
   .video-player {
     aspect-ratio: 16/9 !important;
+  }
+  .footer-copyright {
+    justify-content: space-between !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -47,9 +63,32 @@
   .video-player {
     aspect-ratio: 16/9 !important;
   }
+  .product-item {
+    flex-basis: calc(100% / 3) !important;
+  }
+  .catalog-item-text {
+    position: absolute;
+    background-color: #fff;
+    width: 38rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1.5rem 1.8rem;
+    right: 0;
+  }
+  .catalog-item:nth-child(odd) .catalog-item-image {
+    align-self: flex-end;
+  }
+  .catalog-item:nth-child(even) .catalog-item-text {
+    right: unset;
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 1400px) {
+  .product-item {
+    width: 31.3333% !important; // Three columns on 1400px and larger screens
+    margin-bottom: 30px; // Adjust as needed
+  }
   .container {
     max-width: 132rem !important;
   }

@@ -1,6 +1,7 @@
-.footer-contact {
-  padding: 1rem 0;
+.contact {
+  background-color: #fff;
   .para {
+    margin-top: 1rem;
     text-align: center;
   }
   .contact-us-buttons {
@@ -9,15 +10,22 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     li {
       width: 15.8rem;
       border: 2px solid;
       a {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 0.5rem 1rem;
+        gap: 1rem;
         font-size: 1.6rem;
+        img {
+          height: 2rem;
+          width: 2rem;
+        }
       }
     }
   }

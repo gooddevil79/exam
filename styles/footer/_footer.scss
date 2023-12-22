@@ -1,7 +1,7 @@
 .footer {
   background-color: #3b3b3b;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   .footer-copyright {
     text-align: center;
@@ -9,19 +9,41 @@
   }
   .footer-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
     li {
-      border-left: 2px solid #7b7b7b;
-      &:last-child {
-        border: unset;
+      position: relative;
+      flex: 1;
+      text-align: center;
+      &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0.2rem;
+        height: 100%;
+        background-color: #7b7b7b;
+      }
+      &:last-child::after {
+        display: none;
       }
       a {
-        padding: 0 0.5rem;
+        display: block;
+        padding: 0.7rem;
         color: #fff;
       }
     }
-    border-bottom: 1px solid #eee;
+  }
+  .divider {
+    margin-top: 5.8rem;
+  }
+  .footer-copyright {
+    font-size: 1.2rem;
+    margin-top: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
   }
 }
