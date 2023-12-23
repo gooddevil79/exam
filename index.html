@@ -18,18 +18,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
       integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -69,17 +71,20 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
+              <div class="swiper-slide">
+                <img src="assets/media/slides/home-slider-1.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/media/slides/home-slider-2.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/media/slides/home-slider-3.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/media/slides/home-slider-4.jpg" alt="slide" />
+              </div>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-
-            <!-- If we need scrollbar -->
           </div>
         </div>
       </div>
@@ -320,7 +325,7 @@
       <section class="start-now">
         <div class="container">
           <div class="start-now-content">
-            <h2 class="title">لورم ایپسوم متن ساختگی</h2>
+            <h2 class="title highlight">لورم ایپسوم متن ساختگی</h2>
             <p class="para">
               موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد
               نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته
@@ -473,5 +478,6 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
