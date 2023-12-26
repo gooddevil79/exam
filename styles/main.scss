@@ -15,6 +15,9 @@
   box-sizing: 0;
   list-style: none;
 }
+img {
+  display: block;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -26,6 +29,7 @@ html {
 }
 body {
   font-family: IRANSans;
+  background-color: #f7f7f7;
 }
 .container {
   position: relative;
@@ -51,9 +55,7 @@ body {
 .para {
   font-size: 1.6rem;
 }
-.main {
-  background-color: #f7f7f7;
-}
+
 .highlight {
   color: #f68220;
 }

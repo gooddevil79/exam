@@ -74,6 +74,16 @@
   width: 100%;
   text-decoration: none;
   color: #000;
+  position: relative;
+}
+.nav-container .desktop-menu li a:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 2.8rem;
+  left: 0;
+  height: 5px;
+  background-color: #f68220;
 }
 .nav-container .mobile-menu {
   display: flex;
@@ -115,42 +125,29 @@
   text-align: center;
 }
 
-.articles .articles-container {
-  display: flex;
-  flex-direction: column;
-}
-.articles .articles-container .article-item {
-  flex: 1;
-  flex-basis: 100%;
+.articles {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  align-items: center;
 }
-.articles .articles-container .article-item .sub-title {
-  margin-top: 1rem;
-}
-.articles .articles-container .article-item .para {
-  text-align: justify;
-}
-.articles .articles-container .article-item .article-item-image {
+.articles ul {
   width: 100%;
-  aspect-ratio: 16/9;
-  background-color: #666;
-  overflow: hidden;
+  list-style: none;
+  padding: 0;
 }
-.articles .articles-container .article-item .article-item-image img {
-  transform: scale(1) rotate(0deg);
-  transition: all ease 0.6s;
+.articles li > a {
+  height: 28.2rem;
+  display: block;
+  float: none;
+  position: relative;
+}
+.articles li img {
   width: 100%;
   height: 100%;
-}
-.articles .articles-container .article-item .article-item-image:hover img {
-  transition: all ease 0.6s;
-  transform: scale(1.3) rotate(10deg);
-}
-.articles .articles-container .article-item:last-child {
-  margin-bottom: unset;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 .video {
@@ -187,7 +184,6 @@
 .products-container .product-item {
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 .products-container .product-item img {
   width: 100%;
@@ -232,6 +228,19 @@
 }
 .products-container .product-item .product-content .title {
   color: #fff;
+}
+.products-container .product-item .actions {
+  height: 0;
+  transition: all ease 0.5s;
+}
+.products-container .product-item:hover .actions {
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: all ease 0.5s;
+}
+.products-container .product-item:hover img {
+  transform: scale(1.4);
+  transition: all ease 0.5s;
 }
 
 .start-now {
@@ -376,19 +385,6 @@
   .container {
     max-width: 54rem !important;
   }
-  .products-container .product-item .actions {
-    visibility: hidden;
-    opacity: 0;
-  }
-  .products-container .product-item:hover .actions {
-    transition: all ease 0.5s;
-    visibility: visible;
-    opacity: 1;
-  }
-  .products-container .product-item:hover img {
-    transform: scale(1.4);
-    transition: all ease 0.5s;
-  }
   .contact-us-buttons {
     flex-direction: row !important;
   }
@@ -415,7 +411,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 114rem !important;
+    max-width: 96rem !important;
   }
   .footer {
     font-size: 1.6rem;
@@ -423,18 +419,30 @@
   .footer .footer-copyright {
     font-size: 1.6rem;
   }
-  .article-item {
-    flex-direction: row !important;
-    gap: 2rem;
-    -moz-column-gap: 2rem;
-    -webkit-column-gap: 2rem;
+  .articles-container ul {
+    list-style: none;
+    padding: 0;
   }
-  .article-item .article-item-image,
-  .article-item .content {
-    flex-basis: 50%;
+  .articles-container li {
+    overflow: auto;
+    margin-bottom: 1rem;
   }
-  .article-item:nth-child(odd) {
-    flex-direction: row-reverse !important;
+  .articles-container li img {
+    height: 22.5rem;
+    width: 40rem;
+  }
+  .articles-container li h3 {
+    overflow: auto;
+    display: block;
+  }
+  .articles-container li > a {
+    float: right;
+    margin-left: 2rem;
+  }
+  .articles-container li:nth-child(even) > a {
+    float: left;
+    margin-left: 0;
+    margin-right: 2rem;
   }
   .video-player {
     aspect-ratio: 16/9 !important;
@@ -460,12 +468,24 @@
   .container {
     max-width: 132rem !important;
   }
+  .articles-container li img {
+    height: 28.2rem;
+    width: 50rem;
+  }
+  .product-item {
+    width: 36rem;
+    height: 20.2rem;
+  }
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
   list-style: none;
+}
+
+img {
+  display: block;
 }
 
 a {
@@ -480,6 +500,7 @@ html {
 
 body {
   font-family: IRANSans;
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -509,10 +530,6 @@ body {
 
 .para {
   font-size: 1.6rem;
-}
-
-.main {
-  background-color: #f7f7f7;
 }
 
 .highlight {

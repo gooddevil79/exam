@@ -2,23 +2,7 @@
   .container {
     max-width: 54rem !important;
   }
-  .products-container {
-    .product-item {
-      .actions {
-        visibility: hidden;
-        opacity: 0;
-      }
-      &:hover .actions {
-        transition: all ease 0.5s;
-        visibility: visible;
-        opacity: 1;
-      }
-      &:hover img {
-        transform: scale(1.4);
-        transition: all ease 0.5s;
-      }
-    }
-  }
+
   .contact-us-buttons {
     flex-direction: row !important;
   }
@@ -32,9 +16,7 @@
   .container {
     max-width: 72rem !important;
   }
-  // .product-item {
-  //   flex-basis: 50% !important;
-  // }
+
   .desktop-menu {
     display: flex !important;
   }
@@ -50,7 +32,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 114rem !important;
+    max-width: 96rem !important;
   }
   .footer {
     font-size: 1.6rem;
@@ -58,25 +40,39 @@
       font-size: 1.6rem;
     }
   }
-  .article-item {
-    flex-direction: row !important;
-    gap: 2rem;
-    -moz-column-gap: 2rem;
-    -webkit-column-gap: 2rem;
-    .article-item-image,
-    .content {
-      flex-basis: 50%;
+
+  .articles-container {
+    ul {
+      list-style: none;
+      padding: 0;
     }
-  }
-  .article-item:nth-child(odd) {
-    flex-direction: row-reverse !important;
+
+    li {
+      overflow: auto;
+      margin-bottom: 1rem;
+      img {
+        height: 22.5rem;
+        width: 40rem;
+      }
+      h3 {
+        overflow: auto;
+        display: block;
+      }
+      & > a {
+        float: right;
+        margin-left: 2rem;
+      }
+      &:nth-child(even) > a {
+        float: left;
+        margin-left: 0;
+        margin-right: 2rem;
+      }
+    }
   }
   .video-player {
     aspect-ratio: 16/9 !important;
   }
-  // .product-item {
-  //   flex-basis: 33% !important;
-  // }
+
   .catalog-item-text {
     position: absolute;
     background-color: #fff;
@@ -98,5 +94,17 @@
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 132rem !important;
+  }
+  .articles-container {
+    li {
+      img {
+        height: 28.2rem;
+        width: 50rem;
+      }
+    }
+  }
+  .product-item {
+    width: 36rem;
+    height: 20.2rem;
   }
 }
