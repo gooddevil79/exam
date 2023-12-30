@@ -1,6 +1,10 @@
 .video {
-  height: 30rem;
+  height: 34rem;
   position: relative;
+  .title {
+    margin-bottom: 2.2rem;
+  }
+
   .video-player {
     width: 100%;
     height: 100%;
@@ -19,5 +23,6 @@
     background: none;
     border-radius: 100px;
     margin-top: 2rem;
+    cursor: pointer;
   }
 }

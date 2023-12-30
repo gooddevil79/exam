@@ -1,26 +1,25 @@
-.catalog-container {
-  display: flex;
-  flex-direction: column;
-
-  .catalog-item {
-    flex-basis: 100%;
+.catalogs {
+  .title {
+    margin-bottom: 3.2rem;
+  }
+  ul {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    position: relative;
-    .para {
-      text-align: justify;
-    }
-    margin-bottom: 1.5rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    .catalog-item-image {
-      max-width: 100rem;
-      max-height: 562rem;
+    li {
+      flex: 1;
+      position: relative;
+      margin-bottom: 3rem;
+
+      .para {
+        text-align: justify;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
       img {
         height: 100%;
         width: 100%;
+        margin-bottom: 1rem;
       }
     }
   }

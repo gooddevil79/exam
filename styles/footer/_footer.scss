@@ -2,15 +2,14 @@
   background-color: #3b3b3b;
   color: #fff;
   font-size: 1.4rem;
-
   .footer-copyright {
     text-align: center;
-    padding: 2rem 0;
   }
-  .footer-menu {
+  ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3.8rem;
     li {
       position: relative;
       flex: 1;
@@ -18,10 +17,10 @@
       &:after {
         position: absolute;
         content: '';
-        top: 0;
+        top: 0.5rem;
         left: 0;
-        width: 0.2rem;
-        height: 100%;
+        width: 0.1rem;
+        height: 2.7rem;
         background-color: #7b7b7b;
       }
       &:last-child::after {
@@ -31,15 +30,18 @@
         display: block;
         padding: 0.7rem;
         color: #fff;
+        &:hover {
+          color: #f68220;
+        }
       }
     }
   }
   .divider {
-    margin-top: 5.8rem;
+    color: #ff0000;
   }
   .footer-copyright {
     font-size: 1.2rem;
-    margin-top: 3.6rem;
+    margin-top: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;

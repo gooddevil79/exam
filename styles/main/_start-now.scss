@@ -1,25 +1,24 @@
 .start-now {
   background-color: #cccc;
   padding: 4rem 0;
-  .title {
-    margin-top: 0;
-  }
   .para {
     text-align: center;
     margin-bottom: 3.2rem;
     margin-top: 2.2rem;
   }
   a {
+    width: 15.8rem;
+    height: 4rem;
     text-decoration: none;
     border: 2px solid #000;
     padding: 5px 10px;
     font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
   }
   .start-now-content {
     background-color: #ffffff4a;
     padding: 2rem 0;
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
